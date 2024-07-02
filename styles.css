@@ -1,0 +1,186 @@
+/* IMPORT FOR GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* A LITTLE CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fdf0d5;
+  color: #000;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: disc;
+}
+
+a {
+  color: #000;
+}
+
+/* HEADER STYLES */
+header {
+  width: 80%;
+  margin: 2em auto;
+  background-color: #780000;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.header-img {
+  width: 35%;
+  margin: 2em auto;
+}
+
+.header-img img {
+  margin-top: 3em;
+}
+
+.img-text {
+  margin-top: 1em;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+#time,
+#day {
+  margin-top: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.header-content {
+  width: 65%;
+  margin: 2em auto;
+}
+
+.header-content h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.role {
+  margin-top: 1.5em;
+  padding-bottom: 2em;
+  font-size: 0.8rem;
+}
+
+/* MAIN STYLES */
+main {
+  width: 80%;
+  margin: 2em auto;
+  font-size: 1rem;
+  line-height: 26px;
+}
+
+.tech-goals h2 {
+  font-size: 1.5rem;
+  padding: 1em 0;
+}
+
+.tech-goals p {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  background-color: #780000;
+  color: #fff;
+  padding: 2.5em;
+  line-height: 40px;
+  text-align: center;
+  height: 100%;
+}
+
+footer a {
+  color: #fff;
+}
+
+/* MEDIA QUERIES */
+/* VERY SMALL SCREENS */
+@media screen and (max-width: 300px) {
+  .header-content h1 {
+    font-size: 1.2rem;
+  }
+
+  .social a {
+    font-size: 0.7rem;
+  }
+
+  .tech-goals li {
+    font-size: 0.8rem;
+  }
+
+  footer a,
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+/* SMALL SCREENS */
+@media screen and (min-width: 301px) and (max-width: 399px) {
+  .header-content h1 {
+    font-size: 1.64rem;
+  }
+
+  footer a {
+    font-size: 0.79rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .header-content h1 {
+    font-size: 1.58rem;
+  }
+}
+
+/* MEDIUM SCREENS */
+@media screen and (min-width: 400px) and (max-width: 420px) {
+  .header-content h1 {
+    font-size: 1.8rem;
+  }
+
+  footer a {
+    font-size: 0.9rem;
+  }
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 600px) and (max-width: 1500px) {
+  .social a {
+    margin-right: 0;
+  }
+
+  footer a {
+    margin-right: 1em;
+  }
+}
